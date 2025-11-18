@@ -20,7 +20,7 @@ public class Combinado {
     private Double precio;
 
     @Column(nullable = false)
-    private Double disponible;
+    private Boolean disponible;
 
     @Column(nullable = false)
     private String categoria;
@@ -29,7 +29,7 @@ public class Combinado {
 
     }
 
-    public Combinado(Integer id, String nombre, String descripcion, Double precio, Double disponible, String categoria) {
+    public Combinado(Integer id, String nombre, String descripcion, Double precio, Boolean disponible, String categoria) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -71,11 +71,11 @@ public class Combinado {
         this.precio = precio;
     }
 
-    public Double getDisponible() {
+    public Boolean getDisponible() {
         return disponible;
     }
 
-    public void setDisponible(Double disponible) {
+    public void setDisponible(Boolean disponible) {
         this.disponible = disponible;
     }
 
