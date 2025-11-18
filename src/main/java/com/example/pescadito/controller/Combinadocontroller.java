@@ -22,7 +22,7 @@ public class Combinadocontroller {
 
     @GetMapping("/{id}")
     public ResponseEntity<Combinado>
-    obtenerMascotaPorId(@PathVariable Integer id){
+    obtenerCombinadoPorId(@PathVariable Integer id){
         return combinadoService.buscarPorId(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
