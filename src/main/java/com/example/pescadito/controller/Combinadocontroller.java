@@ -30,7 +30,7 @@ public class Combinadocontroller {
 
     @PostMapping
     public ResponseEntity<?>
-    crearMascota(@RequestBody Combinado combinado){
+    crearCombinado(@RequestBody Combinado combinado){
         if(combinado.getNombre() == null || combinado.getNombre().trim().isEmpty()){
             return ResponseEntity.badRequest().body("El campo nombre es obligatorio");
         }
