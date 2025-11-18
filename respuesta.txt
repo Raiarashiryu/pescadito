@@ -1,0 +1,1 @@
+podemos encontró varios diceños de prones tales como Singleton, Factory Method, Abstract Factory, Builder y Prototype
